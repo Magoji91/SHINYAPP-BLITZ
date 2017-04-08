@@ -1,0 +1,10 @@
+PACKAGES AND DATA FRAME FOR THE SHINY APP
+========================================================
+```{r}
+library(shiny)
+library(leaflet) #the Leaflet will help to produce an interactive map with Shiny.
+
+#CREATING A DATA FRAME FOR STORING DATA TABLES AT SHINIY APP
+df <- data.frame("id" = c("1", "2", "3", "4"),
+"lng" = c(-46.63, -46.65, -46.57, -46.60),
+"lat" = c(-23.55, -23.51, -23.54,-23.54), "Text" = c("BLITZ1","BLITZ2","BLITZ3","BLITZ4" ))
