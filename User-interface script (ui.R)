@@ -1,0 +1,8 @@
+# Define UI for application that produce a map
+ui.R<- fluidPage(
+  leafletOutput("map"),
+  textOutput("locationid1"),
+  textOutput("locationid2"),
+  textOutput("locationid3"),
+  textOutput("locationid4")
+)
