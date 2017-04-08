@@ -32,5 +32,5 @@ output$locationid4 <- renderText({paste("Location Selected using popup select bu
 }
 
 #Running the SHINYAPP-BLITZ
-rsconnect::shinyApp(ui, server)
+shinyApp(ui, server)
 
