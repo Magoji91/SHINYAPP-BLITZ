@@ -1,3 +1,7 @@
+# First: Click in File
+# Second: Clic in New File
+# Third: Select Shiny Web App and please don´t forget to make a account in https://www.shinyapps.io/ to post your App.
+
 # Basic Packages
     
 library(shiny)
@@ -23,7 +27,7 @@ server <- function(input, output, session) {
     df %>% leaflet() %>%
       addProviderTiles("CartoDB.Positron") %>%
       setView(-46.63, -23.55, zoom = 12) %>%
-      addMarkers(layerId = ~id, popup = ~paste("<b>", Text, "</b></br>", actionButton("selectlocation", "Select this Location", onclick = 'Shiny.onInputChange(\"button_click\",  Math.random())')))
+      addMarkers(layerId = ~id, popup = ~paste("<b>", Text, "</b></br>", actionButton("BLITZ location", "TARGET", onclick = 'Shiny.onInputChange(\"button_click\",  Math.random())')))
   })
 
 
